@@ -1,0 +1,407 @@
+/*--------------------Tags--------------------*/
+html, body {
+    height: 100%;
+	overflow-x:hidden;
+}
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+footer a {
+	color:#e6e6e6;
+	text-decoration:none;
+}
+
+/*--------------------Classes--------------------*/
+.navbar {
+    position: relative;
+    z-index: 1060;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1070;
+}
+
+.alert {
+    position: relative;
+    z-index: 1050;
+}
+.modal {
+    z-index: 1080;
+}
+.navbar-transparente {
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+	margin-bottom: 5vh;
+}
+.dropdown-menu {
+    --bs-dropdown-bg: rgba(0, 0, 0, 0.7); /* Substitua pelo código da cor desejada */
+	--bs-dropdown-link-hover-bg: #4d4d4d;
+	--bs-dropdown-link-active-bg: #4d4d4d;
+}
+.footer-transparente {
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+	margin-top: 5vh;
+}
+.alert {
+    z-index: 1050; /* Valor padrão */
+    position: relative; /* Adicionado para garantir que o z-index seja aplicado */
+}
+.card {
+	width: 25vw;
+	height: 35vh;
+	transition: 0.4s ease-in-out;
+}
+.footer-estilo {
+	color:#ffffff;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+.nav-link {
+	color:#ffffff;
+}
+.form-box {
+    background-color:#fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+.forgot-link {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn-secondary-login {
+    background:#808080;
+    color:#fff;
+	margin-top:10px;
+}
+.login {
+	color:#000;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espaço entre os botões */
+}
+.input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/*Containers*/
+.container-index {
+	
+}
+.container-erro-index, .container-edit-usuarios, .container-valida, .container-index-customers, .container-add-customers, .container-edit-customers, .container-view-usuarios, .container-add-usuarios, .container-add-gerentes, .container-edit-gerentes, .container-view-gerentes, .container-index-usuarios, .container-index-gerentes  {
+	height: auto;
+    min-height: 110vh; /* Isso garante que o conteúdo tenha pelo menos a altura da tela */
+}
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 20vh;
+	margin-bottom: 32vh;
+}
+
+/*--------------------IDs--------------------*/
+
+
+/*-------------------- Classes com Tags --------------------*/
+.form-box h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px; /* Espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    height: 40px; /* Garante altura uniforme */
+}
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    color: #bbb;
+    font-size: 18px; /* Ajuste para alinhar melhor */
+}
+.forgot-link a {
+    color:#fff;
+    text-decoration:none;
+    font-size:8px;
+}
+
+/*-------------------- Classes com Eventos --------------------*/
+.card:hover {
+	color:#ffffff;
+	background-color:#999999;
+	width: 24vw;
+	height: 37vh;
+	transition: 0.4s ease-in-out;
+}
+.nav-link:hover {
+	color:#cccccc;
+}
+.btn-secondary:hover {
+    background: #000;
+}
+input::placeholder {
+    color: #fff;  /* Cor do texto do placeholder */
+}
+
+/*-------------------- Tags com Eventos --------------------*/
+footer a:hover {
+	color:#ffffff;
+	text-decoration:none;
+}
+
+
+
+.input-box input:focus {
+    border-color: #4d94ff;
+    background: rgba(255, 255, 255, 0.2);
+}
+.forgot-link a:hover {
+    text-decoration: none;
+}
+
+/*-------------------- @Media --------------------*/
+@media(max-width: 1800px) {
+
+	.card {
+        width: 30vw;
+		height: 35vh; 
+    }
+	.card:hover {
+		width: 27vw;
+		height: 37vh;
+		transition: 0.4s ease-in-out;
+	}
+}
+@media(max-width: 991px) {
+    .cards {
+        
+    }
+   .container-index {
+        margin-bottom: 80vh; /* Antes estava 130vh */
+    }
+	.cards {
+		margin-top: 70vh; /* Antes estava 120vh */
+	}
+	.card {
+        width: 70vw;
+		height: 40vh; 
+    }
+	.card:hover {
+		width: 63vw;
+		height: 37vh;
+		transition: 0.4s ease-in-out;
+	}
+}
+@media(max-width: 767px) {
+	.container-index-customers {
+		height: 120vh;
+	}
+	.container-add-customers, .container-add-usuarios, .container-view-gerentes, .container-edit-gerentes, .container-add-gerentes, .container-edit-customers, .container-edit-usuarios,  .container-view-usuarios {
+		height: 150vh;
+	}
+	.container-index-customers {
+		height: auto;
+		min-height: 120vh; 
+	}
+	.form-box {
+        width: 90%;
+    }
+	.button-group {
+        flex-direction: column;
+    }
+	.login-page .form-box {
+        width: 90%;
+    }
+    .login-page .button-group {
+        flex-direction: column;
+    }
+    .login-page .button-group .btn {
+        width: 100%; /* Ocupa toda a largura */
+    }
+}
+@media(max-width: 700px) {
+	 .container-index {
+		margin-bottom: 80vh;
+	}
+	.cards {
+		margin-top: 70vh;
+	}
+	.card {
+        width: 60vw;
+		height: 40vh; 
+    }
+	.card:hover {
+		width: 57vw;
+		height: 39vh;
+		transition: 0.4s ease-in-out;
+	}
+	.container-index-customers {
+		height: auto;
+		min-height: 150vh; /* Isso garante que o conteúdo tenha pelo menos a altura da tela */
+	}
+}
+
+
+
+
+
+/*-------------------- Estilos Exclusivos para o Login --------------------*/
+.login-page {
+    background: #999999; /* Preto suave */
+    color: #fff; /* Texto branco */
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/*-------------------- Container de Login --------------------*/
+.login-page .container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    margin-bottom: 34vh;
+}
+
+/*-------------------- Caixa do Formulário --------------------*/
+.login-page .form-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+/*-------------------- Inputs --------------------*/
+.login-page .input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.login-page .input-box input {
+    width: 100%;
+    padding: 12px;
+    padding-right: 40px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    height: 40px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.login-page .input-box input:focus {
+    border-color: #888;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.login-page .input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #bbb;
+    font-size: 18px;
+}
+
+/*-------------------- Botões --------------------*/
+.login-page .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.login-page .btn-login {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.login-page .btn-secondary-login {
+    background: #444;
+    color: #fff;
+    font-weight: bold;
+}
+
+.login-page .btn-secondary-login:hover {
+    background: #fff;
+    color: #000;
+}
+
+/*-------------------- Link "Esqueceu a Senha?" --------------------*/
+.login-page .forgot-link {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.login-page .forgot-link a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 14px;
+    transition: color 0.3s ease-in-out; /* Suaviza a mudança de cor */
+}
+
+.login-page .forgot-link a:hover {
+    text-decoration: none; /* Garante que continue sem sublinhado */
+    color: #ddd; /* Opcional: muda a cor ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
