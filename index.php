@@ -14,7 +14,7 @@ try {
 ?>
 <?php if ($db) : ?>
 <?php if (!empty($_SESSION["message"])) : ?>
-			<div class="container-add-customers container-lg">
+			<div class="container-index container-lg vh-100">
 				<div class="alert alert-<?php echo $_SESSION["type"]; ?> alert-dismissible" role="alert" id="actions">
 					<p><?php echo $_SESSION["message"]; ?></p>
 					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
@@ -22,7 +22,7 @@ try {
 				<a href="index.php" class="btn btn-secondary"><i class="fa-solid fa-rotate-left"></i> Cancelar</a>
 			</div>
 <?php else : ?>
-			<div class="container-index d-flex justify-content-center align-items-center vh-100">
+			<div class="container-index d-flex justify-content-center align-items-center">
 				<div class="row w-100 justify-content-center cards">
 					<!-- Clientes -->
 					<div class="col-lg-4 col-12 d-flex flex-column align-items-center">

@@ -70,7 +70,6 @@
 						<div class="col-12">
 							<div class="form-group">
 								<label for="imgPreview">Pré-visualização:</label>
-								<?php var_dump($gerente['foto']); ?>
 								<img src="fotos/<?php echo $gerente['foto']; ?>" id="imgPreview" class="shadow p-1 mt-1 bg-body rounded" width="250vw">
 							</div>
 							<div class="form-group">

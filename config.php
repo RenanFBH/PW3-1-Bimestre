@@ -9,7 +9,7 @@
 	define("DB_PASSWORD", "");
 
 	/** nome do host do MySQL Localhost */
-	define("DB_HOST", "Localhost");
+	define("DB_HOST", "LocalHost");
 
 	/** caminho absoluto para a pasta do sistema **/
 	if ( !defined("ABSPATH") )

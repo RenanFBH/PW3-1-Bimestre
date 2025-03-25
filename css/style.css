@@ -45,7 +45,7 @@ footer a {
 .footer-transparente {
     background-color: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(5px); 
-	margin-top: 5vh;
+	margin-top: -4vh;
 }
 .alert {
     z-index: 1050; /* Valor padrão */
@@ -58,6 +58,7 @@ footer a {
 }
 .footer-estilo {
 	color:#ffffff;
+	margin-top: 50vh;
 }
 .table-responsive {
     overflow-x: auto;
@@ -112,11 +113,16 @@ footer a {
 
 /*Containers*/
 .container-index {
-	
+	margin-bottom:20vh;
 }
-.container-erro-index, .container-edit-usuarios, .container-valida, .container-index-customers, .container-add-customers, .container-edit-customers, .container-view-usuarios, .container-add-usuarios, .container-add-gerentes, .container-edit-gerentes, .container-view-gerentes, .container-index-usuarios, .container-index-gerentes  {
+.container-erro-index, .container-valida, .container-index-customers, .container-view-usuarios, .container-view-gerentes {
 	height: auto;
     min-height: 110vh; /* Isso garante que o conteúdo tenha pelo menos a altura da tela */
+	margin-bottom: 10vh;
+}
+
+.container-index-gerentes, .container-index-usuarios{
+	margin-bottom:10vh;
 }
 .container-login {
     display: flex;
@@ -209,14 +215,9 @@ footer a:hover {
 	}
 }
 @media(max-width: 991px) {
-    .cards {
-        
-    }
-   .container-index {
-        margin-bottom: 80vh; /* Antes estava 130vh */
-    }
-	.cards {
-		margin-top: 70vh; /* Antes estava 120vh */
+	.container-add-customers, .container-edit-customers,  .container-add-gerentes, .container-edit-gerentes, .container-add-usuarios, .container-edit-usuarios {
+		height: 70vh;
+		
 	}
 	.card {
         width: 70vw;
@@ -227,17 +228,22 @@ footer a:hover {
 		height: 37vh;
 		transition: 0.4s ease-in-out;
 	}
+	.footer-estilo{
+		margin-top: 10vh;
+	}
 }
 @media(max-width: 767px) {
-	.container-index-customers {
-		height: 120vh;
-	}
-	.container-add-customers, .container-add-usuarios, .container-view-gerentes, .container-edit-gerentes, .container-add-gerentes, .container-edit-customers, .container-edit-usuarios,  .container-view-usuarios {
-		height: 150vh;
+	.container-add-customers, .container-edit-customers, .container-add-gerentes, .container-edit-gerentes, .container-add-usuarios, .container-edit-usuarios{
+		height: 90vh;
+		min-height: 0;
 	}
 	.container-index-customers {
 		height: auto;
 		min-height: 120vh; 
+	}
+	.container-view-gerentes, .container-view-usuarios {
+		height: 150vh;
+		
 	}
 	.form-box {
         width: 90%;
@@ -256,12 +262,6 @@ footer a:hover {
     }
 }
 @media(max-width: 700px) {
-	 .container-index {
-		margin-bottom: 80vh;
-	}
-	.cards {
-		margin-top: 70vh;
-	}
 	.card {
         width: 60vw;
 		height: 40vh; 
@@ -271,6 +271,7 @@ footer a:hover {
 		height: 39vh;
 		transition: 0.4s ease-in-out;
 	}
+	
 	.container-index-customers {
 		height: auto;
 		min-height: 150vh; /* Isso garante que o conteúdo tenha pelo menos a altura da tela */
