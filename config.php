@@ -17,7 +17,7 @@
 		
 	/** caminho no server para o sistema **/
 	if ( !defined("BASEURL") )
-		define("BASEURL", "/pw/");
+		define("BASEURL", "/PW3-1-Bimestre/");
 		
 	/** caminho do arquivo de banco de dados **/
 	if ( !defined("DBAPI") )
